@@ -1,0 +1,43 @@
+:root{--sea:#0b3d6b;--deep:#06223d;--paper:#f3e3bf;--ink:#3b2a14;--red:#c1121f;--gold:#e9c46a}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{font-family:Lato,sans-serif;background:linear-gradient(var(--sea),var(--deep));color:#f8f1e1;line-height:1.6;overflow-x:hidden}
+a{color:inherit}
+.nav{position:sticky;top:0;z-index:10;display:flex;justify-content:space-between;align-items:center;padding:.7rem 5%;background:rgba(6,34,61,.92);border-bottom:3px solid var(--gold)}
+.logo{font-family:'Pirata One';font-size:1.6rem;text-decoration:none;display:flex;align-items:center;gap:.5rem;color:var(--gold)}.hat-sm{width:42px}
+.nav ul{display:flex;list-style:none;gap:1.5rem}.nav ul a{text-decoration:none;font-weight:700}.nav ul a:hover{color:var(--gold)}
+.menu{display:none;background:none;border:0;color:#fff;font-size:1.6rem;cursor:pointer}
+.hero{position:relative;min-height:92vh;display:flex;align-items:center;justify-content:center;gap:4rem;padding:3rem 5%;flex-wrap:wrap}
+.waves{position:absolute;inset:auto 0 0 0;height:90px;background:repeating-radial-gradient(circle at 50% 0,transparent 0 18px,rgba(255,255,255,.12) 19px 22px,transparent 23px 40px);animation:wave 6s linear infinite}
+@keyframes wave{to{background-position:200px 0}}
+.poster{width:320px;background:var(--paper);color:var(--ink);padding:1.2rem;text-align:center;box-shadow:0 20px 40px rgba(0,0,0,.5),inset 0 0 40px rgba(120,80,20,.35);transform:rotate(-3deg);border:2px solid #cdb07a;font-family:Rye}
+.poster-title{font-size:3.6rem;letter-spacing:.3rem;line-height:1}.poster-sub{font-size:.62rem;margin-bottom:.6rem}
+.portrait{border:4px solid var(--ink);margin:0 auto .6rem}.portrait svg{display:block;width:100%}
+.poster-name{font-family:'Pirata One';font-size:1.9rem}.poster-alias{font-size:.75rem;margin-bottom:.4rem}
+.bounty{font-size:1.7rem}.berry{font-family:serif;font-weight:bold}.poster-foot{font-size:.6rem;margin-top:.5rem}
+.hero-text{max-width:520px}.hero-text h1{font-family:'Pirata One';font-size:clamp(2.6rem,6vw,4.2rem);color:var(--gold)}.hero-text p{font-size:1.15rem;margin:1rem 0 1.5rem}
+.btn{display:inline-block;padding:.75rem 1.5rem;margin:.3rem .5rem .3rem 0;background:var(--red);color:#fff;text-decoration:none;font-weight:700;border-radius:30px;border:2px solid var(--gold);transition:.2s}.btn:hover{transform:translateY(-3px)}.btn.alt{background:transparent}
+section{padding:5rem 6%;max-width:1200px;margin:auto}
+.sec-title{font-family:'Pirata One';font-size:clamp(2.2rem,5vw,3.2rem);color:var(--gold);text-align:center}.sec-sub{text-align:center;opacity:.85;margin-bottom:3rem}
+.timeline{position:relative;max-width:850px;margin:auto}.timeline:before{content:"";position:absolute;left:28px;top:0;bottom:0;border-left:4px dashed var(--gold)}
+.island{display:flex;gap:1.4rem;margin-bottom:2.5rem}.pin{flex:0 0 60px;height:60px;border-radius:50%;background:var(--paper);display:grid;place-items:center;font-size:1.8rem;z-index:1;border:3px solid var(--gold)}
+.card{background:var(--paper);color:var(--ink);padding:1.4rem 1.6rem;border-radius:8px;box-shadow:0 10px 25px rgba(0,0,0,.35)}
+.arc{font-family:Rye;font-size:.8rem;color:var(--red)}.card h3{font-family:'Pirata One';font-size:1.6rem}.loc{font-style:italic;opacity:.8;margin-bottom:.5rem}.card ul{padding-left:1.1rem}
+.fruits{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.5rem}
+.fruit{background:rgba(255,255,255,.07);border:2px solid rgba(233,196,106,.5);border-radius:14px;padding:1.5rem;text-align:center;transition:.25s}.fruit:hover{transform:translateY(-6px) rotate(1deg);border-color:var(--gold)}
+.orb{width:70px;height:70px;margin:0 auto .8rem;border-radius:50%;background:radial-gradient(circle at 30% 30%,#fff8,transparent 40%),repeating-radial-gradient(circle at 50% 50%,var(--c) 0 6px,color-mix(in srgb,var(--c),#000 30%) 7px 10px);position:relative}
+.orb:after{content:"";position:absolute;top:-12px;left:30px;width:8px;height:16px;background:#2d6a4f;border-radius:4px;transform:rotate(25deg)}
+.fruit h3{font-family:'Pirata One';font-size:1.45rem;color:var(--gold)}.fruit small{opacity:.7}
+.haki-title{font-family:'Pirata One';font-size:2rem;text-align:center;margin:3rem 0 1rem;color:var(--gold)}
+.haki div{margin:.9rem auto;max-width:700px}.haki i{display:block;height:12px;border-radius:6px;background:#0003;position:relative;overflow:hidden}
+.haki i:after{content:"";position:absolute;inset:0;width:0;background:linear-gradient(90deg,var(--red),var(--gold));transition:width 1.5s}.haki.on i:after{width:var(--w)}
+.chests{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.6rem}
+.chest{background:linear-gradient(#7a4a1e,#5a3413);border:4px solid var(--gold);border-radius:10px;padding:1.4rem;box-shadow:0 10px 25px #0006}
+.lid{font-family:Rye;font-size:.75rem;color:var(--gold);text-align:center;border-bottom:2px dashed var(--gold);margin-bottom:.8rem;padding-bottom:.4rem}
+.chest h3{font-family:'Pirata One';font-size:1.6rem;color:#ffe9a8}.chest a{display:inline-block;margin-top:.8rem;color:var(--gold);font-weight:700}
+.tags{margin-top:.7rem}.tags span{display:inline-block;font-size:.75rem;background:#0004;padding:.2rem .6rem;border-radius:12px;margin:.15rem}
+.contact{display:flex;gap:2.5rem;align-items:center;justify-content:center;flex-wrap:wrap;background:#111c;border:3px solid var(--gold);border-radius:14px;padding:2rem;max-width:760px;margin:auto}
+.flag{width:170px;background:#111;padding:1rem;border-radius:6px;animation:flap 3s ease-in-out infinite}@keyframes flap{50%{transform:skewY(3deg)}}
+.links{display:flex;flex-direction:column;gap:.8rem;font-size:1.1rem}.links a{text-decoration:none;padding:.5rem 1rem;border:2px solid var(--gold);border-radius:8px}.links a:hover{background:var(--red)}
+footer{text-align:center;padding:2rem;font-size:.8rem;opacity:.7}
+.reveal{opacity:0;transform:translateY(30px);transition:.7s}.reveal.show{opacity:1;transform:none}.poster.reveal.show{transform:rotate(-3deg)}
+@media(max-width:720px){.menu{display:block}.nav ul{display:none;position:absolute;top:100%;right:0;left:0;flex-direction:column;background:var(--deep);padding:1rem 5%}.nav ul.open{display:flex}.hero{gap:2rem}.poster{width:280px}.pin{flex-basis:46px;height:46px}.timeline:before{left:21px}}
