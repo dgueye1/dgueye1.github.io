@@ -13,7 +13,7 @@ a{color:inherit}
 .poster-title{font-size:clamp(2.1rem,10.5vw,3rem);letter-spacing:.08em;margin-right:-.08em;line-height:1;white-space:nowrap;overflow:hidden;max-width:100%}.poster-sub{font-size:.62rem;margin-bottom:.6rem}
 .portrait{border:4px solid var(--ink);margin:0 auto .6rem}.portrait{aspect-ratio:1/1;overflow:hidden}.portrait img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 30%;filter:sepia(.15)}
 .poster-name{font-family:'Pirata One';font-size:1.9rem}.poster-alias{font-size:.75rem;margin-bottom:.4rem}
-.bounty{font-size:1.7rem}.berry{font-family:serif;font-weight:bold}.poster-foot{font-size:.6rem;margin-top:.5rem}
+.bounty{font-size:clamp(1.2rem,6vw,1.7rem);white-space:nowrap;display:flex;justify-content:center;align-items:baseline;gap:.1em}.berry{font-family:serif;font-weight:bold}.poster-foot{font-size:.6rem;margin-top:.5rem}
 .hero-text{max-width:520px}.hero-text h1{font-family:'Pirata One';font-size:clamp(2.6rem,6vw,4.2rem);color:var(--gold)}.hero-text p{font-size:1.15rem;margin:1rem 0 1.5rem}
 .btn{display:inline-block;padding:.75rem 1.5rem;margin:.3rem .5rem .3rem 0;background:var(--red);color:#fff;text-decoration:none;font-weight:700;border-radius:30px;border:2px solid var(--gold);transition:.2s}.btn:hover{transform:translateY(-3px)}.btn.alt{background:transparent}
 section{padding:5rem 6%;max-width:1200px;margin:auto}
