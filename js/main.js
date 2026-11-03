@@ -1,3 +1,4 @@
+if('scrollRestoration' in history)history.scrollRestoration='manual';if(location.hash)history.replaceState(null,'',location.pathname);window.scrollTo(0,0);addEventListener('load',()=>window.scrollTo(0,0));
 document.querySelector('.menu').onclick=()=>document.querySelector('.nav ul').classList.toggle('open');
 document.querySelectorAll('.nav ul a').forEach(a=>a.onclick=()=>document.querySelector('.nav ul').classList.remove('open'));
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('show');io.unobserve(e.target)}}),{threshold:.15});
