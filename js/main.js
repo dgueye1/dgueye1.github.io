@@ -15,7 +15,7 @@ else{const a=H/2-8;d='M0 '+H/2;for(let i=1;i<=n;i++){const x=W*i/n,c=x-W/n/2;d+=
 sv.setAttribute('viewBox','0 0 '+W+' '+H);p.setAttribute('d',d);len=p.getTotalLength();}
 function prog(){const m=document.documentElement.scrollHeight-innerHeight;return m>0?Math.min(Math.max(scrollY/m,0),1):0}
 function draw(){const L=cur*len,pt=p.getPointAtLength(L),q=p.getPointAtLength(Math.min(L+1,len)),q0=p.getPointAtLength(Math.max(L-1,0));
-let dx=(q.x-q0.x)*dir,dy=(q.y-q0.y)*dir;let flip=dir<0?-1:1;let ang=Math.max(-12,Math.min(12,(dx*flip)*8));const s=sh.clientWidth;
+const tx=q.x-q0.x,ty=q.y-q0.y;let flip=dir<0?-1:1;let ang=Math.atan2(ty,Math.abs(tx)+0.0001)*180/Math.PI;ang=Math.max(-15,Math.min(15,ang))*(vert?0.3:1)*flip;const s=sh.clientWidth;
 sh.style.transform='translate('+(pt.x-s/2)+'px,'+(pt.y-s*0.75)+'px) rotate('+ang+'deg) scaleX('+flip+')';}
 function loop(){const d=tgt-cur;if(Math.abs(d)>0.0005){cur+=red?d:d*0.12;draw();requestAnimationFrame(loop)}else{cur=tgt;draw();running=false}}
 let running=false;function onS(){const n=prog();if(n!==last){dir=n>last?1:-1;last=n}tgt=n;if(!running){running=true;requestAnimationFrame(loop)}}
